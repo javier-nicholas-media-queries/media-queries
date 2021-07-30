@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+    .alert-info {
+        background-color: lightblue;}
+    /*.hidden-on-desktop {*/
+    /*    display:block;*/
+    /*}*/
+    body{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .nav-links li{
+        margin-top: 1em;
+
+        background-color: darkgrey;
+    }
+    }
+
+
+/*    .hidden-on-desktop {*/
+/*    display:block;*/
+/*}*/
+
+
