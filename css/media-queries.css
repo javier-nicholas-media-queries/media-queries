@@ -44,7 +44,9 @@ img {
     width: 100%;
 }
 
-
+.sub-section {
+    font-style: italic;
+}
 
 /**** I originally centered the text by using the !important property below but decided to move it to the top of the code right after @media without the !important property. It didn't make a difference on the page.*/
 
@@ -52,14 +54,8 @@ img {
 /*    text-align: center !important;*/
 /*}*/
 
-
 /*.header-img{*/
 /*  */
-
-
-/*}*/
-
-
 
 @media screen and (min-width: 500px) {
     body {
