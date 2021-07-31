@@ -39,7 +39,9 @@ h1 {
     background-color: lightgray;
 }
 
-
+img {
+    width: 100%;
+}
 
 
 /**** I originally centered the text by using the !important property below but decided to move it to the top of the code right after @media without the !important property. It didn't make a difference on the page.*/
