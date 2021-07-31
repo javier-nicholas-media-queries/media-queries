@@ -18,6 +18,9 @@
 
 
 }
+.nav-links li {
+    text-align: center;
+}
 
 body {
     display: flex;
@@ -25,7 +28,7 @@ body {
     font-family: sans-serif;
 }
 
-/* Works outside because we are setting the properties first before telling it to read the display none */
+ /*Works outside because we are setting the properties first before telling it to read the display none */
 .alert-info {
     background-color: #c2fffe;
     border: 2px solid lightgray;
@@ -45,14 +48,27 @@ h1 {
     flex-direction: column;
     padding: 0;
     margin: 0;
+
 }
 
 .nav-links li {
     /* used color meter on mac */
     background-color: #c1c1c1;
-    width: 100%;
+    width: 85%;
     padding: 1em;
-    margin: .5em;
+    margin: 1em;
+
 }
 
+/**** I originally centered the text by using the !important property below but decided to move it to the top of the code right after @media without the !important property. It didn't make a difference on the page.*/
 
+/*.nav-links li {*/
+/*    text-align: center !important;*/
+/*}*/
+
+
+/*.header-img{*/
+/*  */
+
+
+/*}*/
