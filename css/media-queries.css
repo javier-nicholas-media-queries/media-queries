@@ -1,24 +1,58 @@
-@media only screen and (max-width: 600px) {
-    .alert-info {
-        background-color: lightblue;}
-    /*.hidden-on-desktop {*/
-    /*    display:block;*/
-    /*}*/
-    body{
-        display:flex;
-        flex-direction:row;
+@media screen and (min-width: 500px) {
+    body {
+        /* Best to put outside (mobile -> desktop) */
+        /*display: flex;*/
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    .nav-links li{
-        margin-top: 1em;
 
-        background-color: darkgrey;
+     /*H1 alignment works only outside of @media */
+    /*h1 {*/
+    /*    text-align: center;*/
+    /*}*/
+
+    /* Must be set to none and inside @media */
+    .hidden-on-desktop {
+        display: none;
     }
-    }
 
 
-/*    .hidden-on-desktop {*/
-/*    display:block;*/
-/*}*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+/* Works outside because we are setting the properties first before telling it to read the display none */
+.alert-info {
+    background-color: #c2fffe;
+    border: 2px solid lightgray;
+    text-align: center;
+    padding: 1em;
+    width: 85%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    /* used color meter on mac */
+    background-color: #c1c1c1;
+    width: 100%;
+    padding: 1em;
+    margin: .5em;
+}
 
 
