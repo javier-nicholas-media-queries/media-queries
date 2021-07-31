@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     font-family: sans-serif;
     flex-wrap: nowrap;
+    margin: .9em;
 }
 
 h1 {
@@ -42,6 +43,7 @@ h1 {
 img {
     width: 100%;
 }
+
 
 
 /**** I originally centered the text by using the !important property below but decided to move it to the top of the code right after @media without the !important property. It didn't make a difference on the page.*/
