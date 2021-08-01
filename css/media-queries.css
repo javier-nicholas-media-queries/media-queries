@@ -27,9 +27,7 @@ h1 {
 }
 
 .nav-links {
-    flex-direction: column;
     list-style: none;
-    display: flex;
     padding-left: 0;
 }
 
@@ -63,15 +61,58 @@ img {
         /*display: flex;*/
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     /*H1 alignment works only outside of @media */
-    /*h1 {*/
-    /*    text-align: center;*/
-    /*}*/
+    h1 {
+        /*text-align: center;*/
+        /* Added display flex within a flex (body) */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 0;
+    }
 
     /* Must be set to none and inside @media */
     .hidden-on-desktop {
         display: none;
     }
+
+    .nav-links {
+        margin: 0;
+        /* Added display flex within a flex (body) */
+        display: flex;
+        flex-direction: row;
+    }
+
+   .nav-links li {
+       background: none;
+   }
+
+    /*Applies both outside*/
+   /*.header-img {*/
+   /*    width: 100%;*/
+   /*}*/
+
+     /*Actually didn't need this*/
+    /*section {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    flex-wrap: nowrap;*/
+    /*}*/
+
+    .main {
+        width: 65%;
+    }
+
+    .sub-section {
+        width: 35%;
+    }
+
+    /* Have to get the footer down the page */
+    footer {
+
+    }
+
 }
