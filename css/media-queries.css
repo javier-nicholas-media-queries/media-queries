@@ -129,7 +129,7 @@ footer {
         /*display: flex;*/
         /*align-items: flex-end;*/
         /*margin-bottom: 0;*/
-        position: absolute;
+        /*position: absolute;*/
         bottom: 1em;
     }
 }
