@@ -1,63 +1,49 @@
-@media screen and (min-width: 500px) {
-    body {
-        /* Best to put outside (mobile -> desktop) */
-        /*display: flex;*/
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-     /*H1 alignment works only outside of @media */
-    /*h1 {*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /* Must be set to none and inside @media */
-    .hidden-on-desktop {
-        display: none;
-    }
-
-
-}
-.nav-links li {
-    text-align: center;
-}
-
 body {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-}
-
- /*Works outside because we are setting the properties first before telling it to read the display none */
-.alert-info {
-    background-color: #c2fffe;
-    border: 2px solid lightgray;
-    text-align: center;
-    padding: 1em;
-    width: 85%;
-    margin: auto;
+    flex-wrap: nowrap;
+    margin: .9em;
 }
 
 h1 {
+     text-align: center;
+ }
+
+/*Works outside because we are setting the properties first before telling it to read the display none */
+.alert-info {
+    background-color: #c2fffe;
+    border: 2px solid lightgray;
+    box-sizing: border-box;
     text-align: center;
+    padding: 1em;
+    width: 100%;
+    /*text-align: center;*/
+}
+
+.alert-info a {
+    text-decoration: none;
+    color: black;
 }
 
 .nav-links {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-
+    padding-left: 0;
 }
 
 .nav-links li {
-    /* used color meter on mac */
-    background-color: #c1c1c1;
-    width: 85%;
+    text-align: center;
+    margin: .4em 0;
     padding: 1em;
-    margin: 1em;
+    background-color: lightgray;
+}
 
+img {
+    width: 100%;
+}
+
+.sub-section {
+    font-style: italic;
 }
 
 /**** I originally centered the text by using the !important property below but decided to move it to the top of the code right after @media without the !important property. It didn't make a difference on the page.*/
@@ -66,9 +52,67 @@ h1 {
 /*    text-align: center !important;*/
 /*}*/
 
-
 /*.header-img{*/
 /*  */
 
+@media screen and (min-width: 500px) {
+    body {
+        /* Best to put outside (mobile -> desktop) */
+        /*display: flex;*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-/*}*/
+    /*H1 alignment works only outside of @media */
+    h1 {
+        /*text-align: center;*/
+        /* Added display flex within a flex (body) */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 0;
+    }
+
+    /* Must be set to none and inside @media */
+    .hidden-on-desktop {
+        display: none;
+    }
+
+    .nav-links {
+        margin: 0;
+        /* Added display flex within a flex (body) */
+        display: flex;
+        flex-direction: row;
+    }
+
+   .nav-links li {
+       background: none;
+   }
+
+    /*Applies both outside*/
+   /*.header-img {*/
+   /*    width: 100%;*/
+   /*}*/
+
+     /*Actually didn't need this*/
+    /*section {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    flex-wrap: nowrap;*/
+    /*}*/
+
+    .main {
+        width: 65%;
+    }
+
+    .sub-section {
+        width: 35%;
+    }
+
+    /* Have to get the footer down the page */
+    footer {
+
+    }
+
+}
